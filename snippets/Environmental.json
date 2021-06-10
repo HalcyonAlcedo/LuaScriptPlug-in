@@ -1,0 +1,22 @@
+{
+	"设置环境生物筛选器": {
+		"prefix": "Game_Environmental_SetFilter",
+		"body": ["Game_Environmental_SetFilter(${1:id},${0:subid})"],
+		"description": "设置环境生物筛选器"
+	},
+	"清除环境生物筛选器": {
+		"prefix": "Game_Environmental_DisableFilter",
+		"body": ["Game_Environmental_DisableFilter()"],
+		"description": "清除环境生物筛选器"
+	},
+	"设置范围内环境生物坐标": {
+		"prefix": ["SetAllEnvironmentalCoordinatesInRange","Game_Environmental_SetAllEnvironmentalCoordinatesInRange"],
+		"body": ["Game_Environmental_SetAllEnvironmentalCoordinatesInRange(${4:X}, ${3:Y}, ${2:Z}, ${1:min}, ${0:max})"],
+		"description": "设置范围内所有环境生物的坐标"
+	},
+	"获取范围内环境生物坐标": {
+		"prefix": ["GetAllEnvironmentalCoordinatesInRange","Game_Environmental_GetAllEnvironmentalCoordinatesInRange"],
+		"body": ["Game_Environmental_GetAllEnvironmentalCoordinatesInRange(${1:min},${0:max})"],
+		"description": "获取范围内所有环境生物的坐标，受筛选器影响"
+	}
+}

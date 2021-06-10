@@ -2,7 +2,7 @@
 	"name": "mhw-luascript",
 	"displayName": "MHWLuaScript",
 	"description": "怪物猎人世界Lua脚本",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "Alcedo",
 	"repository": {
 		"type": "git",
@@ -18,7 +18,19 @@
 		"snippets": [
 			{
 				"language": "lua",
-				"path": "./snippets.json"
+				"path": "./snippets/LuaAuxiliaryFunction.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/GameSystem.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/Environmental.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/Entity.json"
 			}
 		]
 	}

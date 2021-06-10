@@ -1,0 +1,87 @@
+{
+	"存入整数变量": {
+		"prefix": ["SaveIntVariable","Lua_Variable_SaveIntVariable"],
+		"body": ["Lua_Variable_SaveIntVariable('${1:name}',${0:value})"],
+		"description": "存入整数变量"
+	},
+	"存入浮点数变量": {
+		"prefix": ["SaveFloatVariable","Lua_Variable_SaveFloatVariable"],
+		"body": ["Lua_Variable_SaveFloatVariable('${1:name}',${0:value})"],
+		"description": "存入浮点数变量"
+	},
+	"存入字符串变量": {
+		"prefix": ["SaveStringVariable","Lua_Variable_SaveStringVariable"],
+		"body": ["Lua_Variable_SaveStringVariable('${1:name}',${0:value})"],
+		"description": "存入字符串变量"
+	},
+	"读取整数变量": {
+		"prefix": ["ReadIntVariable","Lua_Variable_ReadIntVariable"],
+		"body": ["Lua_Variable_ReadIntVariable('${0:name}')"],
+		"description": "读取整数变量"
+	},
+	"读取浮点数变量": {
+		"prefix": ["ReadFloatVariable","Lua_Variable_ReadFloatVariable"],
+		"body": ["Lua_Variable_ReadFloatVariable('${0:name}')"],
+		"description": "读取浮点数变量"
+	},
+	"读取字符串变量": {
+		"prefix": ["ReadStringVariable","Lua_Variable_ReadStringVariable"],
+		"body": ["Lua_Variable_ReadStringVariable('${0:name}')"],
+		"description": "读取字符串变量"
+	},
+	"存入全局整数变量": {
+		"prefix": ["SaveGlobalIntVariable","Lua_Variable_SaveGlobalIntVariable"],
+		"body": ["Lua_Variable_SaveGlobalIntVariable('${1:name}',${0:value})"],
+		"description": "存入全局整数变量"
+	},
+	"存入全局浮点数变量": {
+		"prefix": ["SaveGlobalFloatVariable","Lua_Variable_SaveGlobalFloatVariable"],
+		"body": ["Lua_Variable_SaveGlobalFloatVariable('${1:name}',${0:value})"],
+		"description": "存入全局浮点数变量"
+	},
+	"存入全局字符串变量": {
+		"prefix": ["SaveGlobalStringVariable","Lua_Variable_SaveGlobalStringVariable"],
+		"body": ["Lua_Variable_SaveGlobalStringVariable('${1:name}',${0:value})"],
+		"description": "存入全局字符串变量"
+	},
+	"读取全局整数变量": {
+		"prefix": ["ReadGlobalIntVariable","Lua_Variable_ReadGlobalIntVariable"],
+		"body": ["Lua_Variable_ReadGlobalIntVariable('${0:name}')"],
+		"description": "读取全局整数变量"
+	},
+	"读取全局浮点数变量": {
+		"prefix": ["ReadGlobalFloatVariable","Lua_Variable_ReadGlobalFloatVariable"],
+		"body": ["Lua_Variable_ReadGlobalFloatVariable('${0:name}')"],
+		"description": "读取全局浮点数变量"
+	},
+	"读取全局字符串变量": {
+		"prefix": ["ReadGlobalStringVariable","Lua_Variable_ReadGlobalStringVariable"],
+		"body": ["Lua_Variable_ReadGlobalStringVariable('${0:name}')"],
+		"description": "读取全局字符串变量"
+	},
+	"销毁变量": {
+		"prefix": ["DestroyVariable","Lua_Variable_DestroyVariable"],
+		"body": ["Lua_Variable_DestroyVariable('${0:name}')"],
+		"description": "销毁变量"
+	},
+	"获取随机数": {
+		"prefix": "Lua_Math_Rander",
+		"body": ["Lua_Math_Rander(${1:min},${0:max})"],
+		"description": "获取随机数"
+	},
+	"设置子脚本命名前缀": {
+		"prefix": "Lua_Variable_SetSubScriptVariablePrefix",
+		"body": ["Lua_Variable_SetSubScriptVariablePrefix('${0:name}')"],
+		"description": "设置子脚本命名前缀"
+	},
+	"获取UUID": {
+		"prefix": "System_GetUUID",
+		"body": ["System_GetUUID()"],
+		"description": "获取UUID"
+	},
+	"播放音频文件": {
+		"prefix": "System_Sound_PlaySound",
+		"body": ["System_Sound_PlaySound('${0:filePath}')"],
+		"description": "播放音频文件"
+	}
+}

@@ -1,0 +1,48 @@
+{
+	"获取实体属性": {
+		"prefix": ["GetEntityProperties","Game_Entity_GetEntityProperties"],
+		"body": ["Game_Entity_GetEntityProperties('${0:entity}')"],
+		"description": "获取实体属性"
+	},
+	"设置实体坐标": {
+		"prefix": ["SetEntityCoordinate","Game_Entity_SetEntityCoordinate"],
+		"body": ["Game_Entity_SetEntityCoordinate('${3:entity}', ${2:x}, ${1:y}, ${0:z})"],
+		"description": "设置实体坐标"
+	},
+	"设置实体模型大小": {
+		"prefix": ["SetEntitySize","Game_Entity_SetEntitySize"],
+		"body": ["Game_Entity_SetEntitySize('${3:entity}', ${2:x}, ${1:y}, ${0:z})"],
+		"description": "设置实体坐标"
+	},
+	"设置实体当前动作帧": {
+		"prefix": ["SetEntityActionFrame","Game_Entity_SetEntityActionFrame"],
+		"body": ["Game_Entity_SetEntityActionFrame('${1:entity}', ${0:angle})"],
+		"description": "设置实体的当前动作帧"
+	},
+	"设置实体朝向角度": {
+		"prefix": ["SetEntityAimCoordinate","Game_Entity_SetEntityAimCoordinate"],
+		"body": ["Game_Entity_SetEntityAimCoordinate('${2:entity}', ${1:X}, ${0:Z})"],
+		"description": "设置实体的朝向角度"
+	},
+	"实体执行动作": {
+		"prefix": "Game_Entity_BehaviorControl",
+		"body": ["Game_Entity_BehaviorControl('${1:entity}', ${0:id})"],
+		"description": "使实体执行某个动作"
+	},
+	"获取玩家地址": {
+		"prefix": "Game_Entity_GetPlayerPtr",
+		"body": ["Game_Entity_GetPlayerPtr()"],
+		"description": "获取玩家地址"
+	},
+	"设置实体动作帧速率": {
+		"prefix": ["SetEntityFrameSpeed","Game_Entity_SetEntityFrameSpeed"],
+		"body": ["Game_Entity_SetEntityFrameSpeed('${1:entity}', ${0:speed})"],
+		"description": "设置实体的动作帧速率"
+	},
+	"清除实体动作帧设置": {
+		"prefix": ["ClearEntityFrameSpeed","Game_Entity_ClearEntityFrameSpeed"],
+		"body": ["Game_Entity_ClearEntityFrameSpeed()"],
+		"description": "清除所有实体动作帧设置"
+	}
+}
+	
