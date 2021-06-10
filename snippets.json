@@ -1,0 +1,267 @@
+{
+	"存入整数变量": {
+		"prefix": ["SaveIntVariable","Lua_Variable_SaveIntVariable"],
+		"body": ["Lua_Variable_SaveIntVariable('${1:name}',${0:value})"],
+		"description": "存入整数变量"
+	},
+	"存入浮点数变量": {
+		"prefix": ["SaveFloatVariable","Lua_Variable_SaveFloatVariable"],
+		"body": ["Lua_Variable_SaveFloatVariable('${1:name}',${0:value})"],
+		"description": "存入浮点数变量"
+	},
+	"存入字符串变量": {
+		"prefix": ["SaveStringVariable","Lua_Variable_SaveStringVariable"],
+		"body": ["Lua_Variable_SaveStringVariable('${1:name}',${0:value})"],
+		"description": "存入字符串变量"
+	},
+	"读取整数变量": {
+		"prefix": ["ReadIntVariable","Lua_Variable_ReadIntVariable"],
+		"body": ["Lua_Variable_ReadIntVariable('${0:name}')"],
+		"description": "读取整数变量"
+	},
+	"读取浮点数变量": {
+		"prefix": ["ReadFloatVariable","Lua_Variable_ReadFloatVariable"],
+		"body": ["Lua_Variable_ReadFloatVariable('${0:name}')"],
+		"description": "读取浮点数变量"
+	},
+	"读取字符串变量": {
+		"prefix": ["ReadStringVariable","Lua_Variable_ReadStringVariable"],
+		"body": ["Lua_Variable_ReadStringVariable('${0:name}')"],
+		"description": "读取字符串变量"
+	},
+	"存入全局整数变量": {
+		"prefix": ["SaveGlobalIntVariable","Lua_Variable_SaveGlobalIntVariable"],
+		"body": ["Lua_Variable_SaveGlobalIntVariable('${1:name}',${0:value})"],
+		"description": "存入全局整数变量"
+	},
+	"存入全局浮点数变量": {
+		"prefix": ["SaveGlobalFloatVariable","Lua_Variable_SaveGlobalFloatVariable"],
+		"body": ["Lua_Variable_SaveGlobalFloatVariable('${1:name}',${0:value})"],
+		"description": "存入全局浮点数变量"
+	},
+	"存入全局字符串变量": {
+		"prefix": ["SaveGlobalStringVariable","Lua_Variable_SaveGlobalStringVariable"],
+		"body": ["Lua_Variable_SaveGlobalStringVariable('${1:name}',${0:value})"],
+		"description": "存入全局字符串变量"
+	},
+	"读取全局整数变量": {
+		"prefix": ["ReadGlobalIntVariable","Lua_Variable_ReadGlobalIntVariable"],
+		"body": ["Lua_Variable_ReadGlobalIntVariable('${0:name}')"],
+		"description": "读取全局整数变量"
+	},
+	"读取全局浮点数变量": {
+		"prefix": ["ReadGlobalFloatVariable","Lua_Variable_ReadGlobalFloatVariable"],
+		"body": ["Lua_Variable_ReadGlobalFloatVariable('${0:name}')"],
+		"description": "读取全局浮点数变量"
+	},
+	"读取全局字符串变量": {
+		"prefix": ["ReadGlobalStringVariable","Lua_Variable_ReadGlobalStringVariable"],
+		"body": ["Lua_Variable_ReadGlobalStringVariable('${0:name}')"],
+		"description": "读取全局字符串变量"
+	},
+	"销毁变量": {
+		"prefix": ["DestroyVariable","Lua_Variable_DestroyVariable"],
+		"body": ["Lua_Variable_DestroyVariable('${0:name}')"],
+		"description": "销毁变量"
+	},
+	"获取随机数": {
+		"prefix": "Lua_Math_Rander",
+		"body": ["Lua_Math_Rander(${1:min},${0:max})"],
+		"description": "获取随机数"
+	},
+	"设置子脚本命名前缀": {
+		"prefix": "Lua_Variable_SetSubScriptVariablePrefix",
+		"body": ["Lua_Variable_SetSubScriptVariablePrefix('${0:name}')"],
+		"description": "设置子脚本命名前缀"
+	},
+	"获取UUID": {
+		"prefix": "System_GetUUID",
+		"body": ["System_GetUUID()"],
+		"description": "获取UUID"
+	},
+	"播放音频文件": {
+		"prefix": "System_Sound_PlaySound",
+		"body": ["System_Sound_PlaySound('${0:filePath}')"],
+		"description": "播放音频文件"
+	},
+	"获取地图ID": {
+		"prefix": "Game_World_GetMapId",
+		"body": ["Game_World_GetMapId()"],
+		"description": "获取地图ID"
+	},
+	"获取聊天消息": {
+		"prefix": "Game_World_Message",
+		"body": ["Game_World_Message()"],
+		"description": "获取聊天消息"
+	},
+	"获取Steam好友Id": {
+		"prefix": "Game_World_SteamId",
+		"body": ["Game_World_SteamId()"],
+		"description": "获取Steam好友Id"
+	},
+	"获取集会区域代码": {
+		"prefix": "Game_World_Assembly",
+		"body": ["Game_World_Assembly()"],
+		"description": "获取集会区域代码"
+	},
+	"检查按键是否按下": {
+		"prefix": "System_Keyboard_CheckKey",
+		"body": ["System_Keyboard_CheckKey(${0:key})"],
+		"description": "检查按键是否按下，按键为VK码"
+	},
+	"检查是否双击按键": {
+		"prefix": "System_Keyboard_CheckDoubleKey",
+		"body": ["System_Keyboard_CheckDoubleKey(${0:key})"],
+		"description": "检查是否双击按键，按键为VK码"
+	},
+	"检查按键是否处于按下状态": {
+		"prefix": "System_Keyboard_CheckKeyIsPressed",
+		"body": ["System_Keyboard_CheckKeyIsPressed(${0:key})"],
+		"description": "检查按键是否处于按下状态，按键为VK码"
+	},
+	"检查Xbox手柄按键是否按下": {
+		"prefix": "System_XboxPad_CheckKey",
+		"body": ["System_XboxPad_CheckKey(${0:key})"],
+		"description": "检查Xbox手柄按键是否按下"
+	},
+	"检查是否双击Xbox手柄按键": {
+		"prefix": "System_XboxPad_CheckDoubleKey",
+		"body": ["System_XboxPad_CheckDoubleKey(${0:key})"],
+		"description": "检查是否双击Xbox手柄按键"
+	},
+	"检查Xbox手柄按键是否处于按下状态": {
+		"prefix": "System_XboxPad_CheckKeyIsPressed",
+		"body": ["System_XboxPad_CheckKeyIsPressed(${0:key})"],
+		"description": "检查Xbox手柄按键是否处于按下状态"
+	},
+	"检查快捷键是否按下": {
+		"prefix": "System_HotKey_CheckKey",
+		"body": ["System_HotKey_CheckKey('${0:name}')"],
+		"description": "检查快捷键是否按下"
+	},
+	"注册快捷键": {
+		"prefix": "System_HotKey_AddHotKey",
+		"body": ["System_HotKey_AddHotKey('${2:name}','${1:describe}',${0:keys})"],
+		"description": "注册快捷键\n 快捷键默认定义使用16进制数联系组合形成\n 例如Ctrl+F10使用0xffff1d44表示"
+	},
+	"创建计时器": {
+		"prefix": ["AddChronoscope","System_Chronoscope_AddChronoscope"],
+		"body": ["System_Chronoscope_AddChronoscope('${1:time}','${0:name}')"],
+		"description": "创建计时器，需设定时间和计时器名称"
+	},
+	"检查计时器是否到期": {
+		"prefix": ["CheckChronoscope","System_Chronoscope_CheckChronoscope"],
+		"body": ["System_Chronoscope_CheckChronoscope('${0:name}')"],
+		"description": "检查指定名称的计时器是否到期,如果到期则删除计时器"
+	},
+	"检查指定名称的计时器是存在": {
+		"prefix": ["CheckPresenceChronoscope","System_Chronoscope_CheckPresenceChronoscope"],
+		"body": ["System_Chronoscope_CheckPresenceChronoscope('${0:name}')"],
+		"description": "检查指定名称的计时器是存在，主要用于辅助初始化创建计时器"
+	},
+	"删除指定名称的计时器": {
+		"prefix": ["DelChronoscope","System_Chronoscope_DelChronoscope"],
+		"body": ["System_Chronoscope_DelChronoscope('${0:name}')"],
+		"description": "删除指定名称的计时器，用于避免计时器冲突或强行终止计时器"
+	},
+	"获取插件构建版本": {
+		"prefix": ["Build","System_LuaScript_Build"],
+		"body": ["System_LuaScript_Build()"],
+		"description": "获取LuaScript插件构建版本"
+	},
+	"获取插件发行版本": {
+		"prefix": ["Version","System_LuaScript_Version"],
+		"body": ["System_LuaScript_Version()"],
+		"description": "获取LuaScript插件发行版本"
+	},
+	"打开调试控制台": {
+		"prefix": ["OpenDeBug","System_DeBug_OpenDeBugConsole"],
+		"body": ["System_DeBug_OpenDeBugConsole()"],
+		"description": "打开调试控制台"
+	},
+	"关闭调试控制台": {
+		"prefix": ["CloseDeBug","System_DeBug_CloseDeBugConsole"],
+		"body": ["System_DeBug_CloseDeBugConsole()"],
+		"description": "关闭调试控制台"
+	},
+	"获取指定网址的数据": {
+		"prefix": ["GetHttpData","Lua_Http_GetHttpData"],
+		"body": ["Lua_Http_GetHttpData('${0:url}')"],
+		"description": "获取指定网址的数据"
+	},
+	"获取指定网址的数据(JSON)": {
+		"prefix": ["GetHttpJsonData","Lua_Http_GetHttpData"],
+		"body": ["for _, Data in pairs(json.decode(Lua_Http_GetHttpData('${0:url}'))) do\n  \nend"],
+		"description": "用于获取json格式的网络接口数据，需要JSON库"
+	},
+	"链接到websocket服务器": {
+		"prefix": ["LinkWSServer","Lua_WS_LinkWSServer"],
+		"body": ["Lua_WS_LinkWSServer('${0:wss}')"],
+		"description": "链接到指定的websocket服务器"
+	},
+	"获取当前链接状态": {
+		"prefix": "Lua_WS_GetLinkState",
+		"body": ["Lua_WS_GetLinkState()"],
+		"description": "获取当前链接状态"
+	},
+	"获取WS堆栈数据": {
+		"prefix": "Lua_WS_GetMessage",
+		"body": ["Lua_WS_GetMessage()"],
+		"description": "获取服务器返回数据堆栈中的一条数据"
+	},
+	"向游戏内发送消息": {
+		"prefix": ["Message","System_Message_ShowMessage"],
+		"body": ["System_Message_ShowMessage('${0:message}')"],
+		"description": "向游戏内发送消息"
+	},
+	"向控制台发送消息": {
+		"prefix": ["Info","System_Console_Info"],
+		"body": ["System_Console_Info('${0:message}')"],
+		"description": "向控制台发送消息"
+	},
+	"向控制台发送错误消息": {
+		"prefix": ["Error","System_Console_Error"],
+		"body": ["System_Console_Error('${0:message}')"],
+		"description": "向控制台发送错误消息"
+	},
+	"获取内存地址偏移": {
+		"prefix": ["GetOffsetAddress","System_Memory_GetOffsetAddress"],
+		"body": ["System_Memory_GetOffsetAddress('${1:address}','${0:offset}')"],
+		"description": "获取游戏内存的指定地址偏移"
+	},
+	"获取内存地址数据": {
+		"prefix": ["GetAddressData","System_Memory_GetAddressData"],
+		"body": ["System_Memory_GetAddressData('${1:address}','${0:type}')"],
+		"description": "获取游戏内存的指定地址数据"
+	},
+	"设置内存地址数据": {
+		"prefix": ["SetAddressData","System_Memory_SetAddressData"],
+		"body": ["System_Memory_SetAddressData('${2:address}','${1:type}',${0:value})"],
+		"description": "设置游戏内存的指定地址数据"
+	},
+	"绘制图片": {
+		"prefix": ["DrawImage","System_UI_DrawImage"],
+		"body": ["System_UI_DrawImage(\n  '${7:name}',\n  '${6:imgPath}',\n  ${5:X}, ${4:Y},\n  ${3:alpha}, ${2:R}, ${1:G}, ${0:B})\n"],
+		"description": "将图片绘制到游戏中,其中alpha,rgb为可选参数"
+	},
+	"绘制Base64图片": {
+		"prefix": ["DrawBase64Image","System_UI_DrawBase64Image"],
+		"body": ["System_UI_DrawBase64Image(\n  '${9:name}',\n  '${8:base64Data}',\n  ${7:X}, ${6:Y}, ${5:width}, ${4:height},\n  ${3:alpha}, ${2:R}, ${1:G}, ${0:B})\n"],
+		"description": "将Base64图片绘制到游戏中,其中alpha,rgb为可选参数"
+	},
+	"移除图片": {
+		"prefix": ["RemoveImage","System_UI_RemoveImage"],
+		"body": ["System_UI_RemoveImage('${0:name}')"],
+		"description": "向控制台发送消息"
+	},
+	"绘制文字": {
+		"prefix": ["DrawText","System_UI_DrawText"],
+		"body": ["System_UI_DrawText(\n  '${8:name}',\n  '${7:text}',\n  ${6:X}, ${5:Y},\n  ${4:size},\n  ${3:alpha}, ${2:R}, ${1:G}, ${0:B})\n"],
+		"description": "将文字绘制到游戏中,其中size,alpha,rgb为可选参数"
+	},
+	"移除文字": {
+		"prefix": ["RemoveText","System_UI_RemoveText"],
+		"body": ["System_UI_RemoveText('${0:name}')"],
+		"description": "移除绘制的文字"
+	}
+}
