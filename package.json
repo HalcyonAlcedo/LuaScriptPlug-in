@@ -4,6 +4,10 @@
 	"description": "怪物猎人世界Lua脚本",
 	"version": "0.0.1",
 	"publisher": "Alcedo",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/HalcyonAlcedo/LuaScriptPlug-in"
+	},
 	"engines": {
 		"vscode": "^1.28.0"
 	},
