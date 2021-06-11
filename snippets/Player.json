@@ -1,0 +1,47 @@
+{
+	"为玩家添加特效": {
+		"prefix": "Game_Player_AddEffect",
+		"body": ["Game_Player_AddEffect(${1:group},${0:id})"],
+		"description": "为玩家添加特效"
+	},
+	"获取玩家当前派生动作信息": {
+		"prefix": "Game_Player_GetFsmData",
+		"body": ["Game_Player_GetFsmData()"],
+		"description": "获取玩家当前派生动作信息"
+	},
+	"获取玩家当前动作帧": {
+		"prefix": "Game_Player_GetActionFrame",
+		"body": ["Game_Player_GetActionFrame()"],
+		"description": "获取玩家当前动作帧"
+	},
+	"设置玩家当前动作帧": {
+		"prefix": "Game_Player_SetActionFrame",
+		"body": ["Game_Player_SetActionFrame(${0:frame})"],
+		"description": "设置玩家当前动作帧"
+	},
+	"执行指定对象的派生动作": {
+		"prefix": "Game_Player_RunFsmAction",
+		"body": ["Game_Player_RunFsmAction(${1:target},${0:id})"],
+		"description": "执行指定对象的派生动作"
+	},
+	"执行指定动作": {
+		"prefix": "Game_Player_SetActionFrame",
+		"body": ["Game_Player_SetActionFrame(${0:id})"],
+		"description": "执行指定id的动作"
+	},
+	"生成玩家武器投射物": {
+		"prefix": "Game_Player_CreateWeaponProjectiles",
+		"body": ["Game_Player_CreateWeaponProjectiles(${6:id},\n  ${5:startX}, ${4:startY}, ${3:startZ},\n  ${2:endX}, ${1:endY}, ${0:endZ}\n)"],
+		"description": "生成玩家武器投射物"
+	},
+	"生成玩家手弩投射物": {
+		"prefix": "Game_Player_CreateBowgunProjectiles",
+		"body": ["Game_Player_CreateBowgunProjectiles(${6:id},\n  ${5:startX}, ${4:startY}, ${3:startZ},\n  ${2:endX}, ${1:endY}, ${0:endZ}\n)"],
+		"description": "生成玩家手弩投射物"
+	},
+	"获取对玩家仇恨的怪物地址": {
+		"prefix": "Game_Player_GetMonstersHateToPlayers",
+		"body": ["Game_Player_GetMonstersHateToPlayers()"],
+		"description": "获取对玩家仇恨的怪物地址"
+	}
+}

@@ -1,0 +1,132 @@
+{
+	"设置怪物筛选器": {
+		"prefix": "Game_Monster_SetFilter",
+		"body": ["Game_Monster_SetFilter(${1:id},${0:subid})"],
+		"description": "设置怪物筛选器"
+	},
+	"清除怪物筛选器": {
+		"prefix": "Game_Monster_DisableFilter",
+		"body": ["Game_Monster_DisableFilter()"],
+		"description": "清除环境生物筛选器"
+	},
+	"设置导航标记怪物行为": {
+		"prefix": ["SetBehaviorOfNavigationMonsters","Game_Monster_SetBehaviorOfNavigationMonsters"],
+		"body": ["Game_Monster_SetBehaviorOfNavigationMonsters(${0:id})"],
+		"description": "设置导航标记的怪物的行为,不受筛选器影响"
+	},
+	"杀死导航标记怪物": {
+		"prefix": ["KillNavigationMarkMonster","Game_Monster_KillNavigationMarkMonster"],
+		"body": ["Game_Monster_KillNavigationMarkMonster()"],
+		"description": "杀死导航标记的怪物,受筛选器影响"
+	},
+	"添加导航标记怪物异常状态": {
+		"prefix": ["AddDebuffToNavigationMarkMonster","Game_Monster_AddDebuffToNavigationMarkMonster"],
+		"body": ["Game_Monster_AddDebuffToNavigationMarkMonster(${0:buff})"],
+		"description": "为导航标记的怪物添加异常状态,不受筛选器影响"
+	},
+	"获取导航怪物坐标": {
+		"prefix": ["GetNavigationMonsterCoordinates","Game_Monster_GetNavigationMonsterCoordinates"],
+		"body": ["Game_Monster_GetNavigationMonsterCoordinates()"],
+		"description": "获取导航的怪物的坐标"
+	},
+	"设置距离最近记怪物行为": {
+		"prefix": ["SetBehaviorOfNearestMonsters","Game_Monster_SetBehaviorOfNearestMonsters"],
+		"body": ["Game_Monster_SetBehaviorOfNearestMonsters(${0:id})"],
+		"description": "设置距离最近的怪物的行为,不受筛选器影响"
+	},
+	"杀死距离最近的怪物": {
+		"prefix": ["KillNearestMonster","Game_Monster_KillNearestMonster"],
+		"body": ["Game_Monster_KillNearestMonster()"],
+		"description": "杀死距离最近的怪物,受筛选器影响"
+	},
+	"杀死范围内距离最近怪物": {
+		"prefix": ["KillNearestMonsterInRange","Game_Monster_KillNearestMonsterInRange"],
+		"body": ["Game_Monster_KillNearestMonsterInRange(${1:min},${0:max})"],
+		"description": "杀死范围内距离最近的怪物,受筛选器影响"
+	},
+	"杀死范围内所有怪物": {
+		"prefix": ["KillAllMonsterInRange","Game_Monster_KillAllMonsterInRange"],
+		"body": ["Game_Monster_KillAllMonsterInRange(${1:min},${0:max})"],
+		"description": "杀死范围内所有的怪物,受筛选器影响"
+	},
+	"添加距离最近怪物异常状态": {
+		"prefix": ["AddDebuffNearestMonster","Game_Monster_AddDebuffNearestMonster"],
+		"body": ["Game_Monster_AddDebuffNearestMonster(${0:buff})"],
+		"description": "为距离最近的怪物添加异常状态,不受筛选器影响"
+	},
+	"添加范围内距离最近怪物异常状态": {
+		"prefix": ["AddDebuffNearestMonsterInRange","Game_Monster_AddDebuffNearestMonsterInRange"],
+		"body": ["Game_Monster_AddDebuffNearestMonsterInRange(${2:buff},${1:min},${0:max})"],
+		"description": "为范围内最近的怪物添加异常状态,不受筛选器影响"
+	},
+	"获取距离最近怪物坐标": {
+		"prefix": ["GetNearestMonsterCoordinates","Game_Monster_GetNearestMonsterCoordinates"],
+		"body": ["Game_Monster_GetNearestMonsterCoordinates()"],
+		"description": "获取距离最近的怪物的坐标"
+	},
+	"杀死最后一次击中怪物": {
+		"prefix": ["KillLastHitMonster","Game_Monster_KillLastHitMonster"],
+		"body": ["Game_Monster_KillLastHitMonster()"],
+		"description": "杀死最后一次击中的怪物,不受筛选器影响"
+	},
+	"添加最后一次击中怪物异常状态": {
+		"prefix": ["AddDebuffLastHitMonster","Game_Monster_AddDebuffLastHitMonster"],
+		"body": ["Game_Monster_AddDebuffLastHitMonster(${0:buff})"],
+		"description": "为最后一次击中的怪物添加异常状态,不受筛选器影响"
+	},
+	"添加范围内所有怪物异常状态": {
+		"prefix": ["AddDebuffToAllMonsterInRange","Game_Monster_AddDebuffToAllMonsterInRange"],
+		"body": ["Game_Monster_AddDebuffToAllMonsterInRange(${0:buff},${1:min},${0:max})"],
+		"description": "为范围内所有的怪物添加异常状态,受筛选器影响"
+	},
+	"获取范围内所有怪物坐标": {
+		"prefix": ["GetAllMonsterCoordinatesInRange","Game_Monster_GetAllMonsterCoordinatesInRange"],
+		"body": ["Game_Monster_GetAllMonsterCoordinatesInRange(${1:min},${0:max})"],
+		"description": "获取范围内所有怪物的坐标，受筛选器影响"
+	},
+	"获取范围内所有怪物健康状态": {
+		"prefix": ["GetAllMonsterHealthInRange","Game_Monster_GetAllMonsterHealthInRange"],
+		"body": ["Game_Monster_GetAllMonsterHealthInRange(${1:min},${0:max})"],
+		"description": "获取范围内所有怪物的健康状态，受筛选器影响"
+	},
+	"获取指定点范围内所有怪物坐标": {
+		"prefix": ["GetAllMonsterCoordinatesInTargetPointRange","Game_Monster_GetAllMonsterCoordinatesInTargetPointRange"],
+		"body": ["Game_Monster_GetAllMonsterCoordinatesInTargetPointRange(${4:X},${3:Y},${2:Z},${1:min},${0:max})"],
+		"description": "获取指定点范围内所有怪物的坐标，受筛选器影响"
+	},
+	"获取指定点范围内所有怪物健康状态": {
+		"prefix": ["GetAllMonsterHealthInTargetPointRange","Game_Monster_GetAllMonsterHealthInTargetPointRange"],
+		"body": ["Game_Monster_GetAllMonsterHealthInTargetPointRange(${4:X},${3:Y},${2:Z},${1:min},${0:max})"],
+		"description": "获取指定点范围内所有怪物的健康状态，受筛选器影响"
+	},
+	"获取所有怪物坐标": {
+		"prefix": ["GetAllMonsterCoordinates","Game_Monster_GetAllMonsterCoordinates"],
+		"body": ["Game_Monster_GetAllMonsterCoordinates()"],
+		"description": "获取所有怪物的坐标，受筛选器影响"
+	},
+	"获取所有怪物健康状态": {
+		"prefix": ["GetAllMonsterHealth","Game_Monster_GetAllMonsterHealth"],
+		"body": ["Game_Monster_GetAllMonsterHealth()"],
+		"description": "获取所有怪物的健康状态，受筛选器影响"
+	},
+	"获取所有怪物异常状态": {
+		"prefix": ["GetAllMonsterDebuff","Game_Monster_GetAllMonsterDebuff"],
+		"body": ["Game_Monster_GetAllMonsterDebuff()"],
+		"description": "获取所有怪物的异常状态，受筛选器影响"
+	},
+	"获取指定点范围内所有怪物异常状态": {
+		"prefix": ["GetAllMonsterDebuffTargetPointRange","Game_Monster_GetAllMonsterDebuffTargetPointRange"],
+		"body": ["Game_Monster_GetAllMonsterDebuffTargetPointRange(${4:X},${3:Y},${2:Z},${1:min},${0:max})"],
+		"description": "获取指定点范围内所有怪物的异常状态，受筛选器影响"
+	},
+	"获取范围内所有怪物异常状态": {
+		"prefix": ["GetAllMonsterDebuffInRange","Game_Monster_GetAllMonsterDebuffInRange"],
+		"body": ["Game_Monster_GetAllMonsterDebuffInRange(${1:min},${0:max})"],
+		"description": "获取范围内所有怪物的异常状态，受筛选器影响"
+	},
+	"获取怪物中文名": {
+		"prefix": ["GetMonsterCNName","Game_Monster_GetMonsterCNName"],
+		"body": ["Game_Monster_GetMonsterCNName()"],
+		"description": "获取指定id的怪物中文名"
+	}
+}
