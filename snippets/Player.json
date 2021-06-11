@@ -43,5 +43,325 @@
 		"prefix": "Game_Player_GetMonstersHateToPlayers",
 		"body": ["Game_Player_GetMonstersHateToPlayers()"],
 		"description": "获取对玩家仇恨的怪物地址"
+	},
+	"获取玩家坐标": {
+		"prefix": "Game_Player_GetPlayerCoordinate",
+		"body": ["Game_Player_GetPlayerCoordinate()"],
+		"description": "获取玩家坐标"
+	},
+	"设置玩家坐标": {
+		"prefix": "Game_Player_SetPlayerCoordinate",
+		"body": ["Game_Player_SetPlayerCoordinate(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家坐标"
+	},
+	"获取玩家钩爪坐标": {
+		"prefix": "Game_Player_GetPlayerHookCoordinate",
+		"body": ["Game_Player_GetPlayerHookCoordinate()"],
+		"description": "获取玩家钩爪坐标"
+	},
+	"设置钩爪牵引坐标": {
+		"prefix": "Game_Player_SetHookCoordinateChange",
+		"body": ["Game_Player_SetHookCoordinateChange(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置钩爪牵引坐标"
+	},
+	"取消钩爪牵引坐标设置": {
+		"prefix": "Game_Player_CancelHookCoordinateChange",
+		"body": ["Game_Player_CancelHookCoordinateChange()"],
+		"description": "取消钩爪牵引坐标设置"
+	},
+	"获取准星坐标": {
+		"prefix": "Game_Player_GetPlayerCollimatorCoordinate",
+		"body": ["Game_Player_GetPlayerCollimatorCoordinate()"],
+		"description": "获取准星坐标"
+	},
+	"获取抛物线准星坐标": {
+		"prefix": "Game_Player_GetPlayerParabolaCollimatorCoordinate",
+		"body": ["Game_Player_GetPlayerParabolaCollimatorCoordinate()"],
+		"description": "获取抛物线准星坐标"
+	},
+	"获取武器坐标": {
+		"prefix": "Game_Player_GetPlayerWeaponCoordinate",
+		"body": ["Game_Player_GetPlayerWeaponCoordinate()"],
+		"description": "获取武器坐标"
+	},
+	"获取坐标运动增量": {
+		"prefix": "Game_Player_GetPlayerIncrementCoordinate",
+		"body": ["Game_Player_GetPlayerIncrementCoordinate()"],
+		"description": "获取坐标运动增量"
+	},
+	"获取导航坐标": {
+		"prefix": "Game_Player_GetPlayerNavigationCoordinate",
+		"body": ["Game_Player_GetPlayerNavigationCoordinate()"],
+		"description": "获取导航坐标"
+	},
+	"获取玩家武器ID": {
+		"prefix": "Game_Player_Weapon_GetWeaponId",
+		"body": ["Game_Player_Weapon_GetWeaponId()"],
+		"description": "获取玩家武器ID"
+	},
+	"获取玩家武器类型": {
+		"prefix": "Game_Player_Weapon_GetWeaponType",
+		"body": ["Game_Player_Weapon_GetWeaponType()"],
+		"description": "获取玩家武器类型"
+	},
+	"更换玩家的武器": {
+		"prefix": "Game_Player_Weapon_ChangeWeapons",
+		"body": ["Game_Player_Weapon_ChangeWeapons(${1:type},${0:id})"],
+		"description": "更换玩家的武器"
+	},
+	"完全更换玩家的武器": {
+		"prefix": "Game_Player_Weapon_CompleteChangeWeapons",
+		"body": ["Game_Player_Weapon_CompleteChangeWeapons(${1:type},${0:id})"],
+		"description": "完全更换玩家的武器"
+	},
+	"获取玩家武器装饰物坐标": {
+		"prefix": "Game_Player_Weapon_GetOrnamentsCoordinate",
+		"body": ["Game_Player_Weapon_GetOrnamentsCoordinate()"],
+		"description": "获取玩家武器装饰物坐标"
+	},
+	"获取玩家武器装饰物模型大小": {
+		"prefix": "Game_Player_Weapon_GetOrnamentsSize",
+		"body": ["Game_Player_Weapon_GetOrnamentsSize()"],
+		"description": "获取玩家武器装饰物模型大小"
+	},
+	"设置玩家武器装饰物坐标": {
+		"prefix": "Game_Player_Weapon_SetOrnamentsCoordinate",
+		"body": ["Game_Player_Weapon_SetOrnamentsCoordinate(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家武器装饰物坐标"
+	},
+	"设置玩家武器装饰物模型大小": {
+		"prefix": "Game_Player_Weapon_SetOrnamentsSize",
+		"body": ["Game_Player_Weapon_SetOrnamentsSize(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家武器装饰物模型大小"
+	},
+	"解除玩家武器装饰物坐标设置": {
+		"prefix": "Game_Player_Weapon_DecontrolOrnamentsCoordinate",
+		"body": ["Game_Player_Weapon_DecontrolOrnamentsCoordinate()"],
+		"description": "解除玩家武器装饰物坐标设置"
+	},
+	"解除玩家武器装饰物模型大小设置": {
+		"prefix": "Game_Player_Weapon_DecontrolOrnamentsSize",
+		"body": ["Game_Player_Weapon_DecontrolOrnamentsSize()"],
+		"description": "解除玩家武器装饰物模型大小设置"
+	},
+	"获取玩家主武器坐标": {
+		"prefix": "Game_Player_Weapon_GetMainWeaponCoordinate",
+		"body": ["Game_Player_Weapon_GetMainWeaponCoordinate()"],
+		"description": "获取玩家主武器坐标"
+	},
+	"获取玩家主武器模型大小": {
+		"prefix": "Game_Player_Weapon_GetMainWeaponSize",
+		"body": ["Game_Player_Weapon_GetMainWeaponSize()"],
+		"description": "获取玩家主武器模型大小"
+	},
+	"设置玩家主武器坐标": {
+		"prefix": "Game_Player_Weapon_SetMainWeaponCoordinate",
+		"body": ["Game_Player_Weapon_SetMainWeaponCoordinate(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家主武器坐标"
+	},
+	"设置玩家主武器模型大小": {
+		"prefix": "Game_Player_Weapon_SetMainWeaponSize",
+		"body": ["Game_Player_Weapon_SetMainWeaponSize(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家主武器模型大小"
+	},
+	"解除玩家主武器坐标设置": {
+		"prefix": "Game_Player_Weapon_DecontrolMainWeaponCoordinate",
+		"body": ["Game_Player_Weapon_DecontrolMainWeaponCoordinate()"],
+		"description": "解除玩家主武器坐标设置"
+	},
+	"解除玩家主武器模型大小设置": {
+		"prefix": "Game_Player_Weapon_DecontrolMainWeaponSize",
+		"body": ["Game_Player_Weapon_DecontrolMainWeaponSize()"],
+		"description": "解除玩家主武器模型大小设置"
+	},
+	"获取玩家副武器坐标": {
+		"prefix": "Game_Player_Weapon_GetSecondaryWeaponCoordinate",
+		"body": ["Game_Player_Weapon_GetSecondaryWeaponCoordinate()"],
+		"description": "获取玩家副武器坐标"
+	},
+	"获取玩家副武器模型大小": {
+		"prefix": "Game_Player_Weapon_GetSecondaryWeaponSize",
+		"body": ["Game_Player_Weapon_GetSecondaryWeaponSize()"],
+		"description": "获取玩家副武器模型大小"
+	},
+	"设置玩家副武器坐标": {
+		"prefix": "Game_Player_Weapon_SetSecondaryWeaponCoordinate",
+		"body": ["Game_Player_Weapon_SetSecondaryWeaponCoordinate(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家副武器坐标"
+	},
+	"设置玩家副武器模型大小": {
+		"prefix": "Game_Player_Weapon_SetSecondaryWeaponSize",
+		"body": ["Game_Player_Weapon_SetSecondaryWeaponSize(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家副武器模型大小"
+	},
+	"解除玩家副武器坐标设置": {
+		"prefix": "Game_Player_Weapon_DecontrolSecondaryWeaponCoordinate",
+		"body": ["Game_Player_Weapon_DecontrolSecondaryWeaponCoordinate()"],
+		"description": "解除玩家副武器坐标设置"
+	},
+	"解除玩家副武器模型大小设置": {
+		"prefix": "Game_Player_Weapon_DecontrolSecondaryWeaponSize",
+		"body": ["Game_Player_Weapon_DecontrolSecondaryWeaponSize()"],
+		"description": "解除玩家副武器模型大小设置"
+	},
+	"获取武器整数型特殊数值": {
+		"prefix": "Game_Player_Weapon_CharacteristicIntValue",
+		"body": ["Game_Player_Weapon_CharacteristicIntValue('${0:value}')"],
+		"description": "获取武器整数型特殊数值"
+	},
+	"获取武器浮点型特殊数值": {
+		"prefix": "Game_Player_Weapon_CharacteristicFloatValue",
+		"body": ["Game_Player_Weapon_CharacteristicFloatValue('${0:value}')"],
+		"description": "获取武器浮点型特殊数值"
+	},
+	"获取武器字节型特殊数值": {
+		"prefix": "Game_Player_Weapon_CharacteristicByteValue",
+		"body": ["Game_Player_Weapon_CharacteristicByteValue('${0:value}')"],
+		"description": "获取武器字节型特殊数值"
+	},
+	"设置武器型特殊数值": {
+		"prefix": "Game_Player_Weapon_SetCharacteristicValue",
+		"body": ["Game_Player_Weapon_SetCharacteristicValue('${2:address}', '${1:type}', '${0:value}')"],
+		"description": "设置武器型特殊数值"
+	},
+	"获取武器命中坐标": {
+		"prefix": "Game_Player_Weapon_GetHitCoordinate",
+		"body": ["Game_Player_Weapon_GetHitCoordinate()"],
+		"description": "获取武器命中坐标"
+	},
+	"获取武器命中怪物地址": {
+		"prefix": "Game_Player_Weapon_GetAttackMonster",
+		"body": ["Game_Player_Weapon_GetAttackMonster()"],
+		"description": "获取武器命中怪物地址"
+	},
+	"获取玩家角色信息": {
+		"prefix": "Game_Player_GetPlayerRoleInfo",
+		"body": ["Game_Player_GetPlayerRoleInfo()"],
+		"description": "获取玩家角色信息"
+	},
+	"获取玩家血量信息": {
+		"prefix": "Game_Player_GetPlayerHealth",
+		"body": ["Game_Player_GetPlayerHealth()"],
+		"description": "获取玩家血量信息"
+	},
+	"设置玩家当前血量": {
+		"prefix": "Game_Player_SetPlayerCurrentHealth",
+		"body": ["Game_Player_SetPlayerCurrentHealth(${0:health})"],
+		"description": "设置玩家当前血量"
+	},
+	"设置玩家基础血量": {
+		"prefix": "Game_Player_SetPlayerBasicHealth",
+		"body": ["Game_Player_SetPlayerBasicHealth(${0:health})"],
+		"description": "设置玩家基础血量"
+	},
+	"获取玩家耐力信息": {
+		"prefix": "Game_Player_GetPlayerEndurance",
+		"body": ["Game_Player_GetPlayerEndurance()"],
+		"description": "获取玩家耐力信息"
+	},
+	"设置玩家当前耐力": {
+		"prefix": "Game_Player_SetPlayerCurrentEndurance",
+		"body": ["Game_Player_SetPlayerCurrentEndurance(${0:endurance})"],
+		"description": "设置玩家当前耐力"
+	},
+	"设置玩家最大耐力": {
+		"prefix": "Game_Player_SetPlayerMaxEndurance",
+		"body": ["Game_Player_SetPlayerMaxEndurance(${0:endurance})"],
+		"description": "设置玩家最大耐力"
+	},
+	"获取玩家Buff剩余时间": {
+		"prefix": "Game_Player_GetPlayerBuffDuration",
+		"body": ["Game_Player_GetPlayerBuffDuration('${0:buff}')"],
+		"description": "获取玩家Buff剩余时间"
+	},
+	"设置玩家Buff持续时间": {
+		"prefix": "Game_Player_SetPlayerBuffDuration",
+		"body": ["Game_Player_SetPlayerBuffDuration('${1:buff}',${0:time})"],
+		"description": "设置玩家Buff持续时间"
+	},
+	"获取玩家面向角度": {
+		"prefix": "Game_Player_GetPlayerAngle",
+		"body": ["Game_Player_GetPlayerAngle()"],
+		"description": "获取玩家面向角度"
+	},
+	"设置玩家面向角度": {
+		"prefix": "Game_Player_SetPlayerAngle",
+		"body": ["Game_Player_SetPlayerAngle(${0:angle})"],
+		"description": "设置玩家面向角度"
+	},
+	"将玩家面向指定坐标": {
+		"prefix": "Game_Player_SetPlayerAimToCoordinate",
+		"body": ["Game_Player_SetPlayerAimToCoordinate(${1:X}, ${0:Z})"],
+		"description": "将玩家面向指定坐标"
+	},
+	"获取玩家动作ID": {
+		"prefix": "Game_Player_GetPlayerActionId",
+		"body": ["Game_Player_GetPlayerActionId()"],
+		"description": "获取玩家动作ID"
+	},
+	"设置玩家当前动作帧速率": {
+		"prefix": "Game_Player_SetActionFrameSpeed",
+		"body": ["Game_Player_SetActionFrameSpeed(${1:FrameSpeed}, ${0:Target})"],
+		"description": "设置玩家当前动作帧速率"
+	},
+	"获取玩家重力加速度": {
+		"prefix": "Game_Player_GetPlayerGravity",
+		"body": ["Game_Player_GetPlayerGravity()"],
+		"description": "获取玩家重力加速度"
+	},
+	"获取玩家下落速度": {
+		"prefix": "Game_Player_GetPlayerFallSpeedRate",
+		"body": ["Game_Player_GetPlayerFallSpeedRate()"],
+		"description": "获取玩家下落速度"
+	},
+	"设置玩家重力加速度": {
+		"prefix": "Game_Player_SetPlayerGravity",
+		"body": ["Game_Player_SetPlayerGravity(${0:gravity})"],
+		"description": "设置玩家重力加速度"
+	},
+	"设置玩家下落速度": {
+		"prefix": "Game_Player_SetPlayerFallSpeedRate",
+		"body": ["Game_Player_SetPlayerFallSpeedRate(${0:FallSpeedRate})"],
+		"description": "设置玩家下落速度"
+	},
+	"检查是否处于浮空状态": {
+		"prefix": "Game_Player_CheckPlayerAirState",
+		"body": ["Game_Player_CheckPlayerAirState()"],
+		"description": "检查是否处于浮空状态"
+	},
+	"获取视角相机坐标": {
+		"prefix": "Game_Player_GetPlayerVisualCoordinate",
+		"body": ["Game_Player_GetPlayerVisualCoordinate()"],
+		"description": "获取视角相机坐标"
+	},
+	"设置玩家视角相机坐标": {
+		"prefix": "Game_Player_SetPlayerVisualCoordinate",
+		"body": ["Game_Player_SetPlayerVisualCoordinate(${2:X}, ${1:Y}, ${0:Z})"],
+		"description": "设置玩家视角相机坐标"
+	},
+	"解除玩家视角相机坐标设置": {
+		"prefix": "Game_Player_UnbindPlayerVisualCoordinate",
+		"body": ["Game_Player_UnbindPlayerVisualCoordinate()"],
+		"description": "解除玩家视角相机坐标设置"
+	},
+	"获取视角相机距离": {
+		"prefix": "Game_Player_GetPlayerVisualDistance",
+		"body": ["Game_Player_GetPlayerVisualDistance()"],
+		"description": "获取视角相机距离"
+	},
+	"获取视角相机高度": {
+		"prefix": "Game_Player_GetPlayerVisualHeight",
+		"body": ["Game_Player_GetPlayerVisualHeight()"],
+		"description": "获取视角相机高度"
+	},
+	"设置视角相机距离": {
+		"prefix": "Game_Player_SetPlayerVisualDistance",
+		"body": ["Game_Player_SetPlayerVisualDistance(${0:distance})"],
+		"description": "设置视角相机距离"
+	},
+	"设置视角相机高度": {
+		"prefix": "Game_Player_SetPlayerVisualHeight",
+		"body": ["Game_Player_SetPlayerVisualHeight(${0:distance})"],
+		"description": "设置视角相机高度"
 	}
 }
