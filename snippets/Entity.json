@@ -20,9 +20,14 @@
 		"description": "设置实体的当前动作帧"
 	},
 	"设置实体朝向角度": {
+		"prefix": ["SetEntityAngle","Game_Entity_SetEntityAngle"],
+		"body": ["Game_Entity_SetEntityAngle('${1:entity}', ${0:angle})"],
+		"description": "设置实体的朝向角度"
+	},
+	"将实体朝向指定的坐标": {
 		"prefix": ["SetEntityAimCoordinate","Game_Entity_SetEntityAimCoordinate"],
 		"body": ["Game_Entity_SetEntityAimCoordinate('${2:entity}', ${1:X}, ${0:Z})"],
-		"description": "设置实体的朝向角度"
+		"description": "将实体朝向指定的坐标"
 	},
 	"实体执行动作": {
 		"prefix": "Game_Entity_BehaviorControl",
@@ -34,6 +39,11 @@
 		"body": ["Game_Entity_GetPlayerPtr()"],
 		"description": "获取玩家地址"
 	},
+	"获取艾露猫地址": {
+		"prefix": "Game_Entity_GetOtomoPtr",
+		"body": ["Game_Entity_GetOtomoPtr()"],
+		"description": "获取艾露猫地址"
+	},
 	"设置实体动作帧速率": {
 		"prefix": ["SetEntityFrameSpeed","Game_Entity_SetEntityFrameSpeed"],
 		"body": ["Game_Entity_SetEntityFrameSpeed('${1:entity}', ${0:speed})"],
@@ -43,6 +53,11 @@
 		"prefix": ["ClearEntityFrameSpeed","Game_Entity_ClearEntityFrameSpeed"],
 		"body": ["Game_Entity_ClearEntityFrameSpeed()"],
 		"description": "清除所有实体动作帧设置"
+	},
+	"使实体执行FSM动作": {
+		"prefix": ["Game_Entity_RunFsmAction"],
+		"body": ["Game_Entity_RunFsmAction()"],
+		"description": "使实体执行FSM动作"
 	}
 }
 	

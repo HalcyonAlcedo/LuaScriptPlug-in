@@ -59,10 +59,20 @@
 		"body": ["Game_Monster_AddDebuffNearestMonsterInRange(${2:buff},${1:min},${0:max})"],
 		"description": "为范围内最近的怪物添加异常状态,不受筛选器影响"
 	},
+	"控制最后一次击中的怪物的行为": {
+		"prefix": ["SetBehaviorOfLastHitMonsters","Game_Monster_SetBehaviorOfLastHitMonsters"],
+		"body": ["Game_Monster_SetBehaviorOfLastHitMonsters(${0:fsmId})"],
+		"description": "控制最后一次击中的怪物的行为"
+	},
 	"获取距离最近怪物坐标": {
 		"prefix": ["GetNearestMonsterCoordinates","Game_Monster_GetNearestMonsterCoordinates"],
 		"body": ["Game_Monster_GetNearestMonsterCoordinates()"],
 		"description": "获取距离最近的怪物的坐标"
+	},
+	"获取最后一次击中的怪物的坐标": {
+		"prefix": ["GetLastHitMonsterCoordinates","Game_Monster_GetLastHitMonsterCoordinates"],
+		"body": ["Game_Monster_GetLastHitMonsterCoordinates()"],
+		"description": "获取最后一次击中的怪物的坐标"
 	},
 	"杀死最后一次击中怪物": {
 		"prefix": ["KillLastHitMonster","Game_Monster_KillLastHitMonster"],

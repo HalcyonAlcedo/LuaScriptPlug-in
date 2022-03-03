@@ -1,0 +1,27 @@
+{
+	"获取当前任务时间": {
+		"prefix": "Game_Quest_GetQuestNowTime",
+		"body": ["Game_Quest_GetQuestNowTime()"],
+		"description": "获取当前任务时间"
+	},
+	"获取当前任务ID": {
+		"prefix": "Game_Quest_GetQuestId",
+		"body": ["Game_Quest_GetQuestId()"],
+		"description": "获取当前任务ID"
+	},
+	"获取当前任务状态": {
+		"prefix": ["Game_Quest_GetQuestState"],
+		"body": ["Game_Quest_GetQuestState()"],
+		"description": "获取当前任务状态"
+	},
+	"设置下一个任务": {
+		"prefix": ["Game_Quest_SetNextQuest"],
+		"body": ["Game_Quest_SetNextQuest(${0:id})"],
+		"description": "设置下一个任务"
+	},
+	"设置任务状态": {
+		"prefix": ["Game_Quest_SetQuestState"],
+		"body": ["Game_Quest_SetQuestState(${0:state})"],
+		"description": "设置任务状态"
+	}
+}

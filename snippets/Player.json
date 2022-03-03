@@ -24,9 +24,14 @@
 		"body": ["Game_Player_RunFsmAction(${1:target},${0:id})"],
 		"description": "执行指定对象的派生动作"
 	},
+	"检查执行的派生动作是否结束": {
+		"prefix": "Game_Player_CheckRunFsmActionOver",
+		"body": ["Game_Player_CheckRunFsmActionOver()"],
+		"description": "检查执行的派生动作是否结束"
+	},
 	"执行指定动作": {
-		"prefix": "Game_Player_SetActionFrame",
-		"body": ["Game_Player_SetActionFrame(${0:id})"],
+		"prefix": "Game_Player_RunLmtAction",
+		"body": ["Game_Player_RunLmtAction(${0:id})"],
 		"description": "执行指定id的动作"
 	},
 	"生成玩家武器投射物": {
@@ -38,6 +43,11 @@
 		"prefix": "Game_Player_CreateBowgunProjectiles",
 		"body": ["Game_Player_CreateBowgunProjectiles(${6:id},\n  ${5:startX}, ${4:startY}, ${3:startZ},\n  ${2:endX}, ${1:endY}, ${0:endZ}\n)"],
 		"description": "生成玩家手弩投射物"
+	},
+	"生成自定义投射物": {
+		"prefix": "Game_Player_CreateProjectiles",
+		"body": ["Game_Player_CreateProjectiles(${7:id},\n  ${6:startX}, ${5:startY}, ${4:startZ},\n  ${3:endX}, ${2:endY}, ${1:endZ}\n, ${0:entity}\n)"],
+		"description": "生成自定义投射物"
 	},
 	"获取对玩家仇恨的怪物地址": {
 		"prefix": "Game_Player_GetMonstersHateToPlayers",
@@ -83,6 +93,11 @@
 		"prefix": "Game_Player_GetPlayerWeaponCoordinate",
 		"body": ["Game_Player_GetPlayerWeaponCoordinate()"],
 		"description": "获取武器坐标"
+	},
+	"检查瞄准状态": {
+		"prefix": "Game_Player_CheckAimingStatus",
+		"body": ["Game_Player_CheckAimingStatus()"],
+		"description": "检查玩家瞄准状态"
 	},
 	"获取坐标运动增量": {
 		"prefix": "Game_Player_GetPlayerIncrementCoordinate",

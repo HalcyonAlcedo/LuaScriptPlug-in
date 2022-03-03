@@ -2,7 +2,7 @@
 	"name": "mhw-luascript",
 	"displayName": "MHWLuaScript",
 	"description": "怪物猎人世界Lua脚本",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "Alcedo",
 	"repository": {
 		"type": "git",
@@ -39,6 +39,14 @@
 			{
 				"language": "lua",
 				"path": "./snippets/Entity.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/Otomo.json"
+			},
+			{
+				"language": "lua",
+				"path": "./snippets/Quest.json"
 			}
 		]
 	}

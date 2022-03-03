@@ -65,8 +65,8 @@
 		"description": "销毁变量"
 	},
 	"获取随机数": {
-		"prefix": "Lua_Math_Rander",
-		"body": ["Lua_Math_Rander(${1:min},${0:max})"],
+		"prefix": "Lua_Math_Random",
+		"body": ["Lua_Math_Random(${1:min},${0:max})"],
 		"description": "获取随机数"
 	},
 	"设置子脚本命名前缀": {

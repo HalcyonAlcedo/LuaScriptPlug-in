@@ -1,0 +1,47 @@
+{
+	"获取艾露猫坐标": {
+		"prefix": "Game_Otomo_GetOtomoCoordinate",
+		"body": ["Game_Otomo_GetOtomoCoordinate()"],
+		"description": "获取艾露猫坐标"
+	},
+	"获取艾露猫坐标运动增量": {
+		"prefix": "Game_Otomo_GetOtomoIncrementCoordinate",
+		"body": ["Game_Otomo_GetOtomoIncrementCoordinate()"],
+		"description": "获取艾露猫坐标运动增量"
+	},
+	"获取艾露猫面向角度": {
+		"prefix": "Game_Otomo_GetOtomoAngle",
+		"body": ["Game_Otomo_GetOtomoAngle()"],
+		"description": "获取艾露猫面向角度"
+	},
+	"设置艾露猫面向角度": {
+		"prefix": "Game_Otomo_SetOtomoAngle",
+		"body": ["Game_Otomo_SetOtomoAngle(${0:angle})"],
+		"description": "设置艾露猫面向角度"
+	},
+	"将艾露猫面向指定坐标": {
+		"prefix": "Game_Otomo_SetOtomoAimToCoordinate",
+		"body": ["Game_Otomo_SetOtomoAimToCoordinate(${1:X}, ${0:Z})"],
+		"description": "将艾露猫面向指定坐标"
+	},
+	"获取艾露猫动作ID": {
+		"prefix": "Game_Otomo_GetOtomoActionId",
+		"body": ["Game_Otomo_GetOtomoActionId()"],
+		"description": "获取艾露猫动作ID"
+	},
+	"获取艾露猫当前动作帧": {
+		"prefix": "Game_Otomo_GetActionFrame",
+		"body": ["Game_Otomo_GetActionFrame()"],
+		"description": "获取艾露猫当前动作帧"
+	},
+	"设置艾露猫当前动作帧": {
+		"prefix": "Game_Otomo_SetActionFrame",
+		"body": ["Game_Otomo_SetActionFrame(${0:frame})"],
+		"description": "设置艾露猫当前动作帧"
+	},
+	"艾露猫执行指定对象的派生动作": {
+		"prefix": "Game_Otomo_RunFsmAction",
+		"body": ["Game_Otomo_RunFsmAction(${1:target},${0:id})"],
+		"description": "艾露猫执行指定对象的派生动作"
+	}
+}

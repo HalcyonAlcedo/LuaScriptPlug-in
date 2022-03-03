@@ -19,6 +19,11 @@
 		"body": ["Game_World_Assembly()"],
 		"description": "获取集会区域代码"
 	},
+	"获取投射物数据": {
+		"prefix": "Game_Shlp_GetShlpList",
+		"body": ["Game_Shlp_GetShlpList()"],
+		"description": "获取投射物数据"
+	},
 	"检查按键是否按下": {
 		"prefix": "System_Keyboard_CheckKey",
 		"body": ["System_Keyboard_CheckKey(${0:key})"],
@@ -104,6 +109,11 @@
 		"body": ["Lua_Http_GetHttpData('${0:url}')"],
 		"description": "获取指定网址的数据"
 	},
+	"下载文件": {
+		"prefix": ["DownloadFile","Lua_Http_DownloadFile"],
+		"body": ["Lua_Http_DownloadFile('${1:url}','${0:file}')"],
+		"description": "下载文件"
+	},
 	"获取指定网址的数据(JSON)": {
 		"prefix": ["GetHttpJsonData","Lua_Http_GetHttpData"],
 		"body": ["for _, Data in pairs(json.decode(Lua_Http_GetHttpData('${0:url}'))) do\n  \nend"],
@@ -113,6 +123,11 @@
 		"prefix": ["LinkWSServer","Lua_WS_LinkWSServer"],
 		"body": ["Lua_WS_LinkWSServer('${0:wss}')"],
 		"description": "链接到指定的websocket服务器"
+	},
+	"发送信息至WS服务器": {
+		"prefix": ["SendMessage","Lua_WS_SendMessage"],
+		"body": ["Lua_WS_SendMessage('${0:message}')"],
+		"description": "发送信息至WS服务器"
 	},
 	"获取当前链接状态": {
 		"prefix": "Lua_WS_GetLinkState",
@@ -178,5 +193,30 @@
 		"prefix": ["RemoveText","System_UI_RemoveText"],
 		"body": ["System_UI_RemoveText('${0:name}')"],
 		"description": "移除绘制的文字"
+	},
+	"获取屏幕大小": {
+		"prefix": ["GetSystemWindowSize","System_UI_GetSystemWindowSize"],
+		"body": ["System_UI_GetSystemWindowSize()"],
+		"description": "获取屏幕大小"
+	},
+	"获取游戏窗口大小": {
+		"prefix": ["GetGameWindowSize","System_UI_GetGameWindowSize"],
+		"body": ["System_UI_GetGameWindowSize()"],
+		"description": "获取游戏窗口大小"
+	},
+	"获取系统进程列表": {
+		"prefix": ["GetProcessList","System_GetProcessList"],
+		"body": ["System_GetProcessList()"],
+		"description": "获取系统进程列表"
+	},
+	"获取文件Md5": {
+		"prefix": ["GetFileMD5","System_GetFileMD5"],
+		"body": ["System_GetFileMD5('${0:file}')"],
+		"description": "获取文件Md5"
+	},
+	"获取鼠标移动信息": {
+		"prefix": ["GetMouseDelta","System_GetMouseDelta"],
+		"body": ["System_GetMouseDelta()"],
+		"description": "获取鼠标移动信息"
 	}
 }
